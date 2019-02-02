@@ -9,14 +9,36 @@
 import UIKit
 
 class DocumentViewController: UIViewController {
-
+    
+    @IBOutlet weak var nameText: UITextField!
+    @IBOutlet weak var documentText: UITextView!
+    
+    var document: Document?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        if let document = document {
+            documentText.text = document.content ?? ""
+            nameText.text = document.name
+            
+            title = document.name
+        } else {
+            title = ""
+        }
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func save(_ sender: Any) {
+        guard let name = nameText.text else{
+            return
+        }
+        Documents.save(name: name, content: documentText.text)
+    }
+    @IBAction func nameChange(_ sender: Any) {
+        title = nameText.text
+    }
+    
     /*
     // MARK: - Navigation
 

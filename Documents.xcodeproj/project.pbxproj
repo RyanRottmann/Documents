@@ -12,7 +12,8 @@
 		7BFAD3D2220505E000B5D066 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BFAD3D1220505E000B5D066 /* Assets.xcassets */; };
 		7BFAD3D5220505E000B5D066 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BFAD3D3220505E000B5D066 /* LaunchScreen.storyboard */; };
 		7BFAD3DD2205062100B5D066 /* DocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFAD3DC2205062100B5D066 /* DocumentViewController.swift */; };
-		7BFAD3E522050D3500B5D066 /* DocumentListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFAD3E422050D3500B5D066 /* DocumentListTableViewController.swift */; };
+		7BFAD3E92205248F00B5D066 /* DocumentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFAD3E82205248F00B5D066 /* DocumentTableViewCell.swift */; };
+		7BFAD3EB220528CC00B5D066 /* DocumentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFAD3EA220528CC00B5D066 /* DocumentListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +24,8 @@
 		7BFAD3D4220505E000B5D066 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BFAD3D6220505E000B5D066 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BFAD3DC2205062100B5D066 /* DocumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentViewController.swift; sourceTree = "<group>"; };
-		7BFAD3E422050D3500B5D066 /* DocumentListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentListTableViewController.swift; sourceTree = "<group>"; };
+		7BFAD3E82205248F00B5D066 /* DocumentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentTableViewCell.swift; sourceTree = "<group>"; };
+		7BFAD3EA220528CC00B5D066 /* DocumentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +63,9 @@
 				7BFAD3D1220505E000B5D066 /* Assets.xcassets */,
 				7BFAD3D3220505E000B5D066 /* LaunchScreen.storyboard */,
 				7BFAD3D6220505E000B5D066 /* Info.plist */,
+				7BFAD3EA220528CC00B5D066 /* DocumentListViewController.swift */,
 				7BFAD3DC2205062100B5D066 /* DocumentViewController.swift */,
-				7BFAD3E422050D3500B5D066 /* DocumentListTableViewController.swift */,
+				7BFAD3E82205248F00B5D066 /* DocumentTableViewCell.swift */,
 			);
 			path = Documents;
 			sourceTree = "<group>";
@@ -138,7 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BFAD3E522050D3500B5D066 /* DocumentListTableViewController.swift in Sources */,
+				7BFAD3E92205248F00B5D066 /* DocumentTableViewCell.swift in Sources */,
+				7BFAD3EB220528CC00B5D066 /* DocumentListViewController.swift in Sources */,
 				7BFAD3CB220505DF00B5D066 /* AppDelegate.swift in Sources */,
 				7BFAD3DD2205062100B5D066 /* DocumentViewController.swift in Sources */,
 			);
@@ -293,7 +297,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = edu.missouri.Documents;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.missouri.Documents.rr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -311,7 +315,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = edu.missouri.Documents;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.missouri.Documents.rr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
